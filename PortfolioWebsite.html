@@ -1,55 +1,238 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackenzie Burt - Portfolio</title>
+    
+    <!-- Custom CSS with Bootstrap-like grid -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 15px;
+        }
+        
+        .col-lg-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            padding: 0 15px;
+        }
+        
+        .col-lg-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+            padding: 0 15px;
+        }
+        
+        .justify-content-center {
+            justify-content: center;
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .col-md-6, .col-lg-4, .col-lg-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero-section h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        .portfolio-section {
+            padding: 60px 0;
+        }
+        
+        .portfolio-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: calc(100% - 30px);
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .portfolio-card h3 {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+        
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        
+        .about-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mb-5 {
+            margin-bottom: 3rem;
+        }
+        
+        .lead {
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-<h1>Mackenzie Burt</h1>
-<h2>About Me</h2>
-<p> 1. Goals to help others 2. Why I love characters and stories 3. How I learned my skills 4. What I intend to do with them.
-</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Mackenzie Burt</h1>
+            <h2>Creative Artist & Game Developer</h2>
+        </div>
+    </section>
 
-<div class = row>
-    <div col-mid-2>
-        <p>Personal Characters</p>
-        <p>Kove, Russians, Japanese, and American Soldiers/ others in TG, Akara, Kiko, Lera, Chieftan, Spiritual Tribe members, Octavia, Lilith</p>
-    </div>
-    <div col-mid-2>
-        <p>The Stories that Make Us</p>
-        <p> Perhaps harder to showcase. I don't want scenory. Heirarchys, possibly deaths within storylines and how they impact the plot/ character. Character development. Lots of notes, processes.</p>
-        
-    </div>
-    <div col-mid-2>
-        <p>Other's Character Studies</p>
-        <p>Arcane, ATLA, Blue Eye Samurai, maybe even non-art related like Breaking Bad</p>
+    <!-- About Me Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h2 class="text-center mb-4">About Me</h2>
+                        <p class="lead text-center">
+                            My goals center around helping others through the power of storytelling and character development. 
+                            I'm passionate about characters and stories because they connect us to our humanity. 
+                            Through years of dedicated practice, I've learned skills in art, game development, and design. 
+                            I intend to use these skills to create meaningful experiences that inspire and engage others.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <div col-md-2>
-        <p>Life and Death - A personal Project</p>
-        <p>Life = me Death = my sister explain the backstory and concept how they are our personalities online etc. How I'm making a game about life and death as entities inspired by this creative idea.
-            Art of them. Processes of the character design. Why I chose these concepts for me and her. Get into the game play a little, which will occur as I build this game. (if I choose it)
-        </p>
-    </div>
-    <div col-md-2>
-        <p>3D</p>
-        <p> a coming soon here?</p>
-    </div>
-    <div col-md-2>
-        <p>Web and Graphic Design</p>
-        <p> showcase websites, logos, animated logos, etc</p>
-    </div>
-
-    <div col-md-2>
-        <p>Interactive Projects</p>
-        <p>first game, refirbished game, interactive comic w chase, 3D video to see how far I come</p>
-    </div>
-
-</div>
-
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="text-center mb-5">My Work</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>Personal Characters</h3>
+                        <p>Kove, Russians, Japanese, and American Soldiers/ others in TG, Akara, Kiko, Lera, Chieftan, Spiritual Tribe members, Octavia, Lilith</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>The Stories that Make Us</h3>
+                        <p>Character development studies focusing on hierarchies, deaths within storylines and their impact on plot and character growth. Extensive notes and creative processes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>Character Studies</h3>
+                        <p>Analysis of compelling characters from Arcane, ATLA, Blue Eye Samurai, and even non-art related works like Breaking Bad</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>Life and Death - A Personal Project</h3>
+                        <p>Life represents me, Death represents my sister - exploring our personalities through creative storytelling. 
+                        This concept has inspired a game about life and death as entities, featuring character design processes and meaningful gameplay.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>3D Work</h3>
+                        <p>Coming soon - exploring three-dimensional art and design</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <h3>Web and Graphic Design</h3>
+                        <p>Showcase of websites, logos, animated logos, and various digital design projects</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="portfolio-card">
+                        <h3>Interactive Projects</h3>
+                        <p>First game, refurbished game, interactive comic with chase sequences, 3D video to demonstrate artistic growth and technical skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
